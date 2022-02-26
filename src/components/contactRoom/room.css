@@ -1,0 +1,134 @@
+.container{
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+
+}
+.container .room_container{
+    width: 500px;
+    height: 97%;
+    max-height: 97%;
+    overflow: hidden;
+    
+    position: relative;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+@media (max-width:567px) {
+
+    .container .room_container{
+        width: 400px;
+        /* height: 90%; */
+    }
+    
+}
+@media (max-width:420px) {
+    .container .room_container{
+        width: 350px;
+    }
+    
+}
+.room_container .header{
+    height: 12%;
+    background-color: #577BC1;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: white;
+}
+.room_container .header h3{
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.chat {
+    height: 76%;
+    /* background-color: lightsalmon; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url(../../images/wtsp-bg.png);
+    padding: 0 10px;
+}
+.text-field {
+    height: 12%;
+    position: relative;
+    
+}
+.text-field form {
+    height: 100%;
+}
+.text-field form  input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.text-field form button {
+    position: absolute;
+    font-size: 22px;
+    top: 50%;
+    right: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.text-field i {
+   
+    transform: translateY(-50%);
+    color: #577BC1;
+    cursor: pointer;
+}
+@media (max-width:567px) {
+    .container .room_container {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+}
+.chat div {
+    
+    /* padding: 8px 10px; */
+    width: fit-content;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.chat div p{
+    padding: 8px 10px;
+    border-radius: 8px;
+  
+}
+
+.chat div.message p{
+    background-color: white;
+
+}
+
+.chat div.message_receiver{
+    margin-left: auto;
+}
+
+.chat div.message_receiver p{
+    background-color: #577BC1;
+    color: white;
+}
+.chat div span {
+    /* position: absolute; */
+    color: black;
+    font-size: x-small;
+    max-width: 180px;
+    bottom: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}

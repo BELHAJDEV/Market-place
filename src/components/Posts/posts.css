@@ -1,0 +1,72 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.posts_container{
+    min-height: calc(100vh - 70px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  /* background-image: url('../../images/wave-3.svg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .3s;
+}
+.post_container.of{
+    filter: brightness(0.4);
+    min-height: calc(100vh - 70px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    pointer-events: none;
+    transition: .3s;
+}
+.posts_container > a,
+.post_container.of > a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+
+}
+.posts_container img,
+.post_container.of img{
+    
+    max-width: 300px;
+    height: 190px;
+}
+.posts_container div,
+.post_container.of div{
+    border: 1px solid lightgray;
+    min-width: 300px;
+    min-height: 190px ;
+    max-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+.posts_container div:hover ,
+.post_container.of div:hover{
+    box-shadow: rgb(85, 84, 84) 0px 5px 15px;
+}
+.posts h4{
+    margin: 10px 0;
+    color: gray;
+}
+.posts h3 {
+    background-color: #577BC1;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 8px;
+}
