@@ -12,7 +12,7 @@
   /* height: 100vh; */
   overflow-x: hidden;
   transition: .4s;
-
+  min-height: 100vh;
   background-color: rgb(34, 34, 34);
   
 
@@ -20,10 +20,8 @@
 }
 
 .App.of{
+  min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
-  /* background-color: rgb(219, 216, 216); */
-  /* background-color: rgb(51, 51, 51); */
-
-
+ 
 }

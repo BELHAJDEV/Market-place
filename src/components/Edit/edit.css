@@ -1,18 +1,12 @@
 
-.container{
+.my_container{
     display: grid;
     place-items: center;
     width: 100vw;
     min-height: calc(100vh - 70px);
 
-    
-  /* background-image: url('../../images/wave-4.svg'); */
-  /* background-position: left; */
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  background-size: cover;
 }
-.container .file{
+.my_container .file{
     display: none;
 }
 .add_container{
@@ -124,12 +118,12 @@
     color: gray;
     font-size: 20px;
 }
-.details .save_article {
+.details .save {
     display: grid;
     place-items: center;
 }
 
-.details .save_article button {
+.details .save button {
     border: none;
     outline: none;
     padding: 10px 15px;
@@ -141,18 +135,18 @@
     border: 2px solid #577BC1;
 
 }
-.details .save_article button a {
+.details .save button a {
     text-decoration: none;
     color: #577BC1;
     width: 100%;
     height: 100%;
 }
-.details .save_article button:hover{
+.details .save button:hover{
     background-color: #577BC1;
     color: white;
 
 }
-.details .save_article button:hover a{
+.details .save button:hover a{
     
     color: white;
 

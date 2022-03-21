@@ -71,6 +71,7 @@
 .header__container .search form{
     display: flex;
     align-items: center;
+    /* display: none; */
     
 }
 .header__container .search input{

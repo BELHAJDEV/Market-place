@@ -98,7 +98,7 @@ let j = 0
 
     return (
         <Zoom>
-        <div className="container">
+        <div className="my_container">
         
         <input type="file" className='file'
             onChange={hundleChange}
@@ -143,7 +143,7 @@ let j = 0
                         <i className="fas fa-map-marker-alt"></i>
                     </div>
 
-                    <div className="save_article">
+                    <div className="save">
                         <button type='submit' onClick={saveArticle}>
                         <Link to='/'>
                         Edit

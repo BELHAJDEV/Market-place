@@ -40,8 +40,8 @@ function AddPost() {
    
    let j = 0
    let content = [];
-   const Add = ()=> {
-       db.collection('posts').add({
+   const Add = async()=> {
+       await db.collection('posts').add({
            productName : title,
            price,
            imagesUrl : content,
@@ -88,7 +88,7 @@ function AddPost() {
     return (
         
         <Zoom>
-        <div className="container">
+        <div className="my_container">
         
         <input type="file" className='file'
             onChange={hundleChange}
@@ -151,9 +151,9 @@ function AddPost() {
 
                     <div className="save_article">
                         <button type='submit' onClick={saveArticle}>
-                        <Link to='/'>
+                        {/* <Link to='/'> */}
                         Publish
-                        </Link>
+                        {/* </Link> */}
                         </button>
                     </div>
 

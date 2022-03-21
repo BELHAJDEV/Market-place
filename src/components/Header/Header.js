@@ -29,6 +29,7 @@ function Header() {
     const [activeUser,setActiveUser] = value2;
 
     useEffect(()=> {
+        console.log('chafik !!')
         const unsubscribe = auth.onAuthStateChanged((authUser)=> {
           if(authUser) {
             // user has logged in
@@ -58,7 +59,7 @@ function Header() {
 
     const login = (e)=> {
         e.preventDefault();
-        console.log(text);
+        // console.log(text);
         setText('');
 
         
@@ -67,11 +68,7 @@ function Header() {
     const signIn = (e)=>{
         e.preventDefault();
 
-        console.log(
-          
-            "The email in ",email,
-            "The pass in ",password
-            );
+        
         auth
         .signInWithEmailAndPassword(email,password)
         .catch((error)=> alert(error.message))
@@ -94,7 +91,7 @@ function Header() {
             
         
         setOpenSignUp(false);
-        console.log(getName);
+        // console.log(getName);
         setClose(false);
         window.location.reload();
        
@@ -134,7 +131,7 @@ function Header() {
 
                 <input 
                     type="text" 
-                    placeholder='Search an item ...'
+                    placeholder='Search an item ... (Not Yet)'
                     value={text}
                     onChange={(e)=>setText(e.target.value)}
                  />
